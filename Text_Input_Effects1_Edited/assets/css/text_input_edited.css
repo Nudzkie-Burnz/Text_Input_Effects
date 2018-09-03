@@ -1,0 +1,472 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body div#wrapper {
+  text-align: center;
+  width: 100%;
+}
+body div#wrapper h1 {
+  font-weight: bold;
+  margin: 50px auto;
+}
+body div#wrapper div.box {
+  height: 100%;
+  width: 100%;
+  margin: 50px auto;
+}
+body div#wrapper div.box div#hideo {
+  background-color: #f9f7f6;
+  padding: 50px 10px;
+}
+body div#wrapper div.box div#hideo h2 {
+  font-weight: bold;
+  color: #596792;
+  margin: 0px 0 100px 0;
+}
+body div#wrapper div.box div#hideo div.hideo_input_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body div#wrapper div.box div#hideo div.hideo_input_container div.hideo_input_fields {
+  margin-left: 75px;
+}
+body div#wrapper div.box div#hideo div.hideo_input_container div.hideo_input_fields:first-child {
+  margin-left: 0px;
+}
+body div#wrapper div.box div#hideo div.hideo_input_container div.hideo_input_fields .input_padding {
+  padding-left: 70px !important;
+}
+body div#wrapper div.box div#hideo div.hideo_input_container div.hideo_input_fields input.hideo_inputs {
+  border: #ddd;
+  font-size: 20px;
+  height: 60px;
+  outline: none;
+  padding: 10px 10px 10px 100px;
+  width: 365px;
+  transition: all .3s;
+}
+body div#wrapper div.box div#hideo div.hideo_input_container div.hideo_input_fields .hideo_input_styles {
+  line-height: 70px !important;
+  width: 60px !important;
+}
+body div#wrapper div.box div#hideo div.hideo_input_container div.hideo_input_fields label.hideo_icon_container {
+  cursor: text;
+  background-color: #899dda;
+  height: 60px;
+  left: 0px;
+  line-height: 79px;
+  position: absolute;
+  top: 0px;
+  transition: all .3s;
+  width: 75px;
+}
+body div#wrapper div.box div#hideo div.hideo_input_container div.hideo_input_fields label.hideo_icon_container .icon_reduce {
+  font-size: 18px !important;
+}
+body div#wrapper div.box div#hideo div.hideo_input_container div.hideo_input_fields label.hideo_icon_container span.glyphicon {
+  color: #fff;
+  font-size: 30px;
+  transition: all .3s;
+}
+body div#wrapper div.box div#hoshi {
+  background-color: #f9f7f6;
+  padding: 50px 10px;
+}
+body div#wrapper div.box div#hoshi h2 {
+  font-weight: bold;
+  color: #6A7989;
+  margin: 0px 0 100px 0;
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container .hoshi_top_styles {
+  left: 15px !important;
+  opacity: 1 !important;
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container span.hoshi_top_labels {
+  color: #6A7989;
+  font-size: 18px;
+  font-weight: bold;
+  left: -70px;
+  opacity: 0;
+  position: absolute;
+  transition: all ease-in 0.2s;
+  top: -5px;
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container .hoshi_top_text_label::before {
+  animation-name: move_label;
+  animation-duration: .4s;
+  content: 'Name';
+  color: #6A7989;
+  font-size: 18px;
+  font-weight: bold;
+  left: 19px;
+  position: absolute;
+  transition: all ease-in 0.2s;
+  top: -3px;
+}
+@keyframes move_label {
+  0% {
+    opacity: 0;
+    left: -20px;
+    top: -3px;
+  }
+  100% {
+    opacity: 1;
+    left: 19px;
+    top: -3px;
+  }
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container div.hoshi_input_fields {
+  height: 100px;
+  margin-left: 20px;
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container div.hoshi_input_fields:first-child {
+  margin-left: 0px;
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container div.hoshi_input_fields input.hoshi_inputs {
+  background-color: #f9f7f6;
+  border: none;
+  border-bottom: 1px solid #acb9c7;
+  color: #acb9c7;
+  font-size: 25px;
+  font-weight: bold;
+  height: 40px;
+  outline: none;
+  padding: 0 5px;
+  transition: all .1s;
+  width: 365px;
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container div.hoshi_input_fields .hoshi_label_styles {
+  left: 60px !important;
+  opacity: 0 !important;
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container div.hoshi_input_fields label.hoshi_labels {
+  color: #6A7989;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  left: 20px;
+  transition: all .2s;
+  top: 15px;
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container div.hoshi_input_fields .hoshi_underline_color {
+  width: 365px !important;
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container div.hoshi_input_fields div.hoshi_underline_bottom {
+  height: 4px;
+  left: 15px;
+  position: absolute;
+  transition: all .3s;
+  width: 0px;
+  top: 53px;
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container div.hoshi_input_fields div#hoshi_underline_name {
+  background-color: #00AAFF;
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container div.hoshi_input_fields div#hoshi_underline_email {
+  background-color: #00FFAA;
+}
+body div#wrapper div.box div#hoshi div#hoshi_input_container div.hoshi_input_fields div#hoshi_underline_town {
+  background-color: #FF5500;
+}
+body div#wrapper div.box div#haruki {
+  background-color: #f0efee;
+  height: 350px;
+  padding: 50px 10px;
+  position: relative;
+}
+body div#wrapper div.box div#haruki h2 {
+  font-weight: bold;
+  color: #d0d0d0  ;
+  margin: 0px 0 100px 0;
+}
+body div#wrapper div.box div#haruki div#haruki_input_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body div#wrapper div.box div#haruki div#haruki_input_container .haruki_input_field_styles::before {
+  content: '';
+  top: -10px !important;
+}
+body div#wrapper div.box div#haruki div#haruki_input_container .haruki_input_field_styles::after {
+  content: '';
+  bottom: -10px !important;
+}
+body div#wrapper div.box div#haruki div#haruki_input_container div.haruki_input_fields {
+  margin-right: 75px;
+}
+body div#wrapper div.box div#haruki div#haruki_input_container div.haruki_input_fields:nth-child(3) {
+  margin-right: 0px;
+}
+body div#wrapper div.box div#haruki div#haruki_input_container div.haruki_input_fields::before {
+  background-color: #6a7989;
+  content: '';
+  position: absolute;
+  height: 4px;
+  left: 0px;
+  transition: all .2s;
+  top: 0px;
+  width: 350px;
+}
+body div#wrapper div.box div#haruki div#haruki_input_container div.haruki_input_fields::after {
+  background-color: #6a7989;
+  bottom: 0px;
+  content: '';
+  height: 4px;
+  left: 0px;
+  position: absolute;
+  transition: all .2s;
+  width: 350px;
+}
+body div#wrapper div.box div#haruki div#haruki_input_container div.haruki_input_fields input.haruki_inputs {
+  background-color: transparent;
+  border: none;
+  color: #b6b6b6;
+  font-size: 35px;
+  font-weight: bold;
+  height: 75px;
+  outline: none;
+  padding: 5px 15px 5px 15px;
+  transition: all .3s;
+  width: 350px;
+}
+body div#wrapper div.box div#haruki div#haruki_input_container div.haruki_input_fields .addlabel_style {
+  color: #6a7989 !important;
+  font-weight: bold !important;
+  top: -50px !important;
+}
+body div#wrapper div.box div#haruki div#haruki_input_container div.haruki_input_fields label.haruki_labels {
+  color: #6a7989;
+  font-size: 20px;
+  font-weight: normal;
+  left: 15px;
+  position: absolute;
+  transition: all .4s;
+  top: 25px;
+}
+body div#wrapper div.box div#juro {
+  background-color: #2fa8ec;
+  height: 350px;
+  padding: 50px 10px;
+}
+body div#wrapper div.box div#juro h2 {
+  font-weight: bold;
+  color: #65c0f4;
+  margin: 0px 0 100px 0;
+}
+body div#wrapper div.box div#juro div#juro_input_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body div#wrapper div.box div#juro div#juro_input_container .juro_container_styles {
+  /*     opacity: 1 !important;*/
+  padding: 40px 7px 7px 7px;
+}
+body div#wrapper div.box div#juro div#juro_input_container div.juro_input_fields {
+  background-color: #1784cd;
+  height: 100px;
+  margin-right: 75px;
+  /* opacity: 0;*/
+  padding: 40px 7px 7px 7px;
+  position: relative;
+  transition: all .3s;
+  width: 320px;
+}
+body div#wrapper div.box div#juro div#juro_input_container div.juro_input_fields:nth-child(3) {
+  margin-right: 0px;
+}
+body div#wrapper div.box div#juro div#juro_input_container div.juro_input_fields .juro_input_styles {
+  height: 60px !important;
+  left: 5px !important;
+  outline: none;
+  top: 35px !important;
+  width: 310px !important;
+}
+body div#wrapper div.box div#juro div#juro_input_container div.juro_input_fields input.juro_inputs {
+  border: none;
+  caret-color: #1784cd;
+  color: #1990df;
+  font-size: 18px;
+  font-weight: bold;
+  height: 100%;
+  left: 0px;
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  transition: all .3s;
+  z-index: 2;
+}
+body div#wrapper div.box div#juro div#juro_input_container div.juro_input_fields .juro_label_styles {
+  color: #fff !important;
+  font-size: 13px !important;
+  left: 7px !important;
+  top: 15px !important;
+}
+body div#wrapper div.box div#juro div#juro_input_container div.juro_input_fields label.juro_labels {
+  color: #6a7989;
+  font-size: 18px;
+  left: 25px;
+  position: absolute;
+  top: 37px;
+  transition: all .4s;
+  z-index: 3;
+}
+body div#wrapper div.box div#madoka {
+  background-color: #2f3238;
+  height: 350px;
+  padding: 50px 10px;
+}
+body div#wrapper div.box div#madoka h2 {
+  font-weight: bold;
+  color: #646464;
+  margin: 0px 0 100px 0;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container .frequency_style {
+  font-size: 15px !important;
+  top: 90px !important;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container .madoka_labels {
+  color: #7A7593;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  transition: all .4s;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container span#madoka_frequency {
+  left: 90px;
+  top: 35px;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container span#madoka_weight {
+  left: 485px;
+  top: 35px;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container span#madoka_strength {
+  right: 380px;
+  top: 35px;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields {
+  border-bottom: 2px solid #7A7593;
+  height: 75px;
+  margin-right: 75px;
+  padding: 10px;
+  transition: all .4s;
+  width: 320px;
+  overflow: hidden;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields:nth-child(3) {
+  margin-right: 0px;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields .right_style {
+  top: 0px !important;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields span.madoka_borders {
+  background-color: #7A7593;
+  position: absolute;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields span.right {
+  height: 100%;
+  transition: all .1s;
+  right: 0px;
+  top: 73px;
+  width: 2px;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields .top_style {
+  right: 0px !important;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields span.top {
+  height: 2px;
+  right: -320px;
+  transition: all .1s;
+  transition-delay: .1s;
+  top: 0px;
+  width: 100%;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields .left_style {
+  top: 0px !important;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields span.left {
+  height: 100%;
+  left: 0px;
+  transition: all .1s;
+  transition-delay: .2s;
+  top: -73px;
+  width: 2px;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields span.right1 {
+  height: 100%;
+  transition: all .1s;
+  right: 0px;
+  top: 73px;
+  width: 2px;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields span.top1 {
+  height: 2px;
+  right: -320px;
+  transition: all .1s;
+  transition-delay: .1s;
+  top: 0px;
+  width: 100%;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields span.left1 {
+  height: 100%;
+  left: 0px;
+  transition: all .1s;
+  transition-delay: .2s;
+  top: -73px;
+  width: 2px;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields span.right2 {
+  height: 100%;
+  transition: all .1s;
+  right: 0px;
+  top: 73px;
+  width: 2px;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields span.top2 {
+  height: 2px;
+  right: -320px;
+  transition: all .1s;
+  transition-delay: .1s;
+  top: 0px;
+  width: 100%;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields span.left2 {
+  height: 100%;
+  left: 0px;
+  transition: all .1s;
+  transition-delay: .2s;
+  top: -73px;
+  width: 2px;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields .madoka_input_styles {
+  outline: none;
+}
+body div#wrapper div.box div#madoka div#madoka_input_container div.madoka_input_fields input.madoka_inputs {
+  background-color: transparent;
+  border: none;
+  color: #7A7593;
+  font-size: 20px;
+  font-weight: bold;
+  height: 100%;
+  padding: 5px;
+  position: relative;
+  width: 100%;
+}

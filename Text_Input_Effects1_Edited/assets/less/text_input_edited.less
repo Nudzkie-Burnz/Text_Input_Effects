@@ -1,0 +1,494 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    div#wrapper{
+        text-align: center;
+        width: 100%;
+
+        h1{
+            font-weight: bold;
+            margin: 50px auto;
+        }
+       
+        div.box{
+            height: 100%;
+            width: 100%;
+            margin: 50px auto;
+            div#hideo{
+                background-color: #f9f7f6;
+                padding: 50px 10px;
+                h2{
+                    font-weight: bold;
+                    color: #596792;
+                    margin: 0px 0 100px 0;
+                }
+                div.hideo_input_container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                    div.hideo_input_fields{
+                        margin-left: 75px;
+                        &:first-child{
+                            margin-left: 0px;
+                        }
+
+                        .input_padding{
+                            padding-left: 70px !important;
+                        }
+                        input.hideo_inputs{
+                            border: #ddd;
+                            font-size: 20px;
+                            height: 60px;
+                            outline: none;
+                            padding: 10px 10px 10px 100px;
+                            width: 365px;
+                            transition: all .3s;
+                        }
+
+                        .hideo_input_styles{
+                            line-height: 70px !important;
+                            width: 60px !important; 
+                        }
+                        label.hideo_icon_container{
+                            cursor: text;
+                            background-color: #899dda;
+                            height: 60px;
+                            left: 0px;
+                            line-height: 79px;
+                            position: absolute;
+                            top: 0px;
+                            transition: all .3s;
+                            width: 75px;
+                            
+                            .icon_reduce{
+                                font-size: 18px !important;
+                            }
+                            span.glyphicon{
+                                color: #fff;
+                                font-size: 30px;
+                                transition: all .3s;
+                            }
+                        }
+                    }
+                }
+            }
+
+            div#hoshi{
+                background-color: #f9f7f6;
+                padding: 50px 10px;
+                h2{
+                    font-weight: bold;
+                    color: #6A7989;
+                    margin: 0px 0 100px 0;
+                }
+                div#hoshi_input_container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    .hoshi_top_styles{
+                        left: 15px !important;
+                        opacity: 1 !important;
+                    }
+                    span.hoshi_top_labels{
+                        color: #6A7989; 
+                        font-size: 18px;
+                        font-weight: bold;
+                        left: -70px;
+                        opacity: 0;
+                        position: absolute;
+                        transition: all ease-in .2s;
+                        top: -5px;
+                    }
+                    .hoshi_top_text_label::before{
+                        animation-name: move_label;
+                        animation-duration: .4s;
+                        content: 'Name';
+                        color: #6A7989; 
+                        font-size: 18px;
+                        font-weight: bold;
+                        left: 19px;
+                        position: absolute;
+                        transition: all ease-in .2s;
+                        top: -3px;
+                    }
+                    @keyframes move_label {
+                        0%   {
+                            opacity: 0;
+                            left: -20px; 
+                            top: -3px;
+                        }
+                        100% {
+                            opacity: 1;
+                            left: 19px; 
+                            top: -3px;
+                        }
+                    }
+                    div.hoshi_input_fields{
+                        height: 100px;
+                        margin-left: 20px;
+                        overflow: hidden;
+                        padding: 15px;
+                        position: relative;
+
+                        &:first-child{
+                            margin-left: 0px;
+                        }
+                        input.hoshi_inputs{
+                            background-color: #f9f7f6;
+                            border: none;
+                            border-bottom: 1px solid #acb9c7;
+                            color: #acb9c7;
+                            font-size: 25px;
+                            font-weight: bold;
+                            height: 40px;
+                            outline: none;
+                            padding: 0 5px;
+                            transition: all .1s;
+                            width: 365px;
+                        }
+
+                        .hoshi_label_styles{
+                            left: 60px !important; 
+                            opacity: 0 !important;
+                        }
+                        label.hoshi_labels{
+                            color: #6A7989; 
+                            font-size: 18px;
+                            font-weight: bold;
+                            position: absolute;
+                            left: 20px;
+                            transition: all .2s;
+                            top: 15px;
+                        }
+                        .hoshi_underline_color{
+                            width: 365px !important;
+                        }
+                        div.hoshi_underline_bottom{
+                            height: 4px;
+                            left: 15px;
+                            position: absolute;
+                            transition: all .3s;
+                            width: 0px;
+                            top: 53px;
+                        }
+                        div#hoshi_underline_name{
+                            background-color: #00AAFF;
+                        }
+                        div#hoshi_underline_email{
+                            background-color: #00FFAA;
+                        }
+                         div#hoshi_underline_town{
+                            background-color: #FF5500;
+                        }
+                    }
+                }
+            }
+
+            div#haruki{
+                background-color: #f0efee;
+                height: 350px;
+                padding: 50px 10px;
+                position: relative;
+                h2{
+                    font-weight: bold;
+                    color: #d0d0d0  ;
+                    margin: 0px 0 100px 0;
+                }
+                div#haruki_input_container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    .haruki_input_field_styles{
+                        &::before{
+                            content: '';
+                            top: -10px !important;
+                        }
+                        &::after{
+                            content: '';
+                            bottom: -10px !important;
+                        }
+                    }
+                    div.haruki_input_fields{
+                        margin-right: 75px;
+
+                        &:nth-child(3){
+                            margin-right: 0px;
+                        }
+                        &::before{
+                            background-color: #6a7989;
+                            content: '';
+                            position: absolute;
+                            height: 4px;
+                            left: 0px;
+                            transition: all .2s;
+                            top: 0px;
+                            width: 350px;
+                        }
+                        &::after{
+                            background-color: #6a7989;
+                            bottom: 0px;
+                            content: '';
+                            height: 4px;
+                            left: 0px;
+                            position: absolute;
+                            transition: all .2s;
+                            width: 350px;
+                        }
+                        input.haruki_inputs{
+                            background-color: transparent;
+                            border: none;
+                            color: #b6b6b6;
+                            font-size: 35px;
+                            font-weight: bold;
+                            height: 75px;
+                            outline: none;
+                            padding: 5px 15px 5px 15px;
+                            transition: all .3s;
+                            width: 350px;
+                        }
+                        .addlabel_style{
+                            color: #6a7989 !important;
+                            font-weight: bold !important;
+                            top: -50px !important;
+                        }
+                        label.haruki_labels{
+                            color: #6a7989; 
+                            font-size: 20px;
+                            font-weight: normal;
+                            left: 15px;
+                            position: absolute;
+                            transition: all .4s;
+                            top: 25px;
+                        }
+                    }
+                }
+            }
+
+            div#juro{
+                background-color: #2fa8ec;
+                height: 350px;
+                padding: 50px 10px;
+                h2{
+                    font-weight: bold;
+                    color: #65c0f4;
+                    margin: 0px 0 100px 0;
+                }
+                div#juro_input_container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+ 
+                    .juro_container_styles{
+                   /*     opacity: 1 !important;*/
+                        padding: 40px 7px 7px 7px;
+                    }
+                    div.juro_input_fields{
+                        background-color: #1784cd;
+                        height: 100px;
+                        margin-right: 75px;
+                       /* opacity: 0;*/
+                        padding: 40px 7px 7px 7px;
+                        position: relative;
+                        transition: all .3s;
+                        width: 320px;
+
+                        &:nth-child(3){
+                            margin-right: 0px;
+                        }
+                        .juro_input_styles{
+                            height: 60px !important;
+                            left: 5px !important;
+                            outline: none;
+                            top: 35px !important;
+                            width: 310px !important;
+                        }
+                        input.juro_inputs{
+                            border: none;
+                            caret-color: #1784cd;
+                            color: #1990df;
+                            font-size: 18px;
+                            font-weight: bold;
+                            height: 100%;
+                            left: 0px;
+                            width: 100%;
+                            padding: 10px;
+                            position: absolute;
+                            top: 0px;
+                            transition: all .3s;
+                            z-index: 2;
+                        }
+                        .juro_label_styles{
+                            color: #fff !important;
+                            font-size: 13px !important;
+                            left: 7px !important;
+                            top: 15px !important;
+                        }
+                        label.juro_labels{
+                            color: #6a7989;
+                            font-size: 18px;
+                            left: 25px;
+                            position: absolute;
+                            top: 37px;
+                            transition: all .4s;
+                            z-index: 3;
+                        }
+                    }
+                }
+            }
+
+            div#madoka{
+                background-color: #2f3238;
+                height: 350px;
+                padding: 50px 10px;
+                h2{
+                    font-weight: bold;
+                    color: #646464;
+                    margin: 0px 0 100px 0;
+                }
+                div#madoka_input_container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    position: relative;
+
+                    .frequency_style{
+                        font-size: 15px !important;
+                        top: 90px !important;
+                    }
+                    .madoka_labels{
+                        color: #7A7593;
+                        font-size: 18px;
+                        font-weight: bold;
+                        position: absolute;
+                        transition: all .4s;
+                    }
+                    span#madoka_frequency{
+                        left: 90px;
+                        top: 35px;
+                    }
+                    span#madoka_weight{
+                        left: 485px;
+                        top: 35px;
+                    }
+                    span#madoka_strength{
+                        right: 380px;
+                        top: 35px;
+                    }
+                    div.madoka_input_fields{
+                        border-bottom: 2px solid #7A7593;
+                        height: 75px;
+                        margin-right: 75px;
+                        padding: 10px;
+                        transition: all .4s;
+                        width: 320px;
+                        overflow: hidden;
+
+                        &:nth-child(3){
+                            margin-right: 0px;
+                        }
+                        .right_style{
+                            top: 0px !important;
+                        }
+                        span.madoka_borders{
+                            background-color: #7A7593;
+                            position: absolute;
+                        }
+                        span.right{
+                            height: 100%;
+                            transition: all .1s;
+                            right: 0px;
+                            top: 73px;
+                            width: 2px;
+                        }
+                        .top_style{
+                            right: 0px !important;
+                        }
+                        span.top{
+                            height: 2px;
+                            right: -320px;
+                            transition: all .1s;
+                            transition-delay: .1s;
+                            top: 0px;
+                            width: 100%;
+                        }
+                        .left_style{
+                            top: 0px !important;
+                        }
+                        span.left{
+                            height: 100%;
+                            left: 0px;
+                            transition: all .1s;
+                            transition-delay: .2s;
+                            top: -73px;
+                            width: 2px;
+                        }
+                        span.right1{
+                            height: 100%;
+                            transition: all .1s;
+                            right: 0px;
+                            top: 73px;
+                            width: 2px;
+                        }
+                        span.top1{
+                            height: 2px;
+                            right: -320px;
+                            transition: all .1s;
+                            transition-delay: .1s;
+                            top: 0px;
+                            width: 100%;
+                        }
+                        span.left1{
+                            height: 100%;
+                            left: 0px;
+                            transition: all .1s;
+                            transition-delay: .2s;
+                            top: -73px;
+                            width: 2px;
+                        }
+
+                        span.right2{
+                            height: 100%;
+                            transition: all .1s;
+                            right: 0px;
+                            top: 73px;
+                            width: 2px;
+                        }
+                        span.top2{
+                            height: 2px;
+                            right: -320px;
+                            transition: all .1s;
+                            transition-delay: .1s;
+                            top: 0px;
+                            width: 100%;
+                        }
+                        span.left2{
+                            height: 100%;
+                            left: 0px;
+                            transition: all .1s;
+                            transition-delay: .2s;
+                            top: -73px;
+                            width: 2px;
+                        }
+                        .madoka_input_styles{
+                            outline: none;
+                        }
+                        input.madoka_inputs{
+                            background-color: transparent;
+                            border: none;
+                            color: #7A7593;
+                            font-size: 20px;
+                            font-weight: bold;
+                            height: 100%;
+                            padding: 5px;
+                            position: relative;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

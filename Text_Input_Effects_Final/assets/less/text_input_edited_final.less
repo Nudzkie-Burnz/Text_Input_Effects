@@ -1,0 +1,540 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    div#wrapper{
+        text-align: center;
+        width: 100%;
+
+        h1{
+            font-weight: bold;
+            margin: 50px auto;
+        }
+       
+        div.box{
+            height: 100%;
+            width: 100%;
+            margin: 50px auto;
+
+            div#hoshi{
+                background-color: #f9f7f6;
+                padding: 50px 10px;
+                h2{
+                    font-weight: bold;
+                    color: #6A7989;
+                    margin: 0px 0 100px 0;
+                }
+                div#hoshi_input_container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    .hoshi_top_styles{
+                        left: 15px !important;
+                        opacity: 1 !important;
+                    }
+                    span.hoshi_top_labels{
+                        color: #6A7989; 
+                        font-size: 18px;
+                        font-weight: bold;
+                        left: -70px;
+                        opacity: 0;
+                        position: absolute;
+                        transition: all ease-in .2s;
+                        top: -5px;
+                    }
+                    .hoshi_top_text_label::before{
+                        animation-name: move_label;
+                        animation-duration: .4s;
+                        content: 'Name';
+                        color: #6A7989; 
+                        font-size: 18px;
+                        font-weight: bold;
+                        left: 19px;
+                        position: absolute;
+                        transition: all ease-in .2s;
+                        top: -3px;
+                    }
+                    @keyframes move_label {
+                        0%   {
+                            opacity: 0;
+                            left: -20px; 
+                            top: -3px;
+                        }
+                        100% {
+                            opacity: 1;
+                            left: 19px; 
+                            top: -3px;
+                        }
+                    }
+                    div.hoshi_input_fields{
+                        height: 100px;
+                        margin-left: 20px;
+                        overflow: hidden;
+                        padding: 15px;
+                        position: relative;
+
+                        &:first-child{
+                            margin-left: 0px;
+                        }
+                        input.hoshi_inputs{
+                            background-color: #f9f7f6;
+                            border: none;
+                            border-bottom: 1px solid #acb9c7;
+                            color: #acb9c7;
+                            font-size: 25px;
+                            font-weight: bold;
+                            height: 40px;
+                            outline: none;
+                            padding: 0 5px;
+                            transition: all .1s;
+                            width: 365px;
+                        }
+
+                        .hoshi_label_styles{
+                            left: 60px !important; 
+                            opacity: 0 !important;
+                        }
+                        label.hoshi_labels{
+                            color: #6A7989; 
+                            font-size: 18px;
+                            font-weight: bold;
+                            position: absolute;
+                            left: 20px;
+                            transition: all .2s;
+                            top: 15px;
+                        }
+                        .hoshi_underline_color{
+                            width: 365px !important;
+                        }
+                        div.hoshi_underline_bottom{
+                            height: 4px;
+                            left: 15px;
+                            position: absolute;
+                            transition: all .3s;
+                            width: 0px;
+                            top: 53px;
+                        }
+                        div#hoshi_underline_name{
+                            background-color: #00AAFF;
+                        }
+                        div#hoshi_underline_email{
+                            background-color: #00FFAA;
+                        }
+                         div#hoshi_underline_town{
+                            background-color: #FF5500;
+                        }
+                    }
+                }
+            }
+
+            div#haruki{
+                background-color: #f0efee;
+                height: 350px;
+                padding: 50px 10px;
+                position: relative;
+                h2{
+                    font-weight: bold;
+                    color: #d0d0d0  ;
+                    margin: 0px 0 100px 0;
+                }
+                div#haruki_input_container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    .haruki_input_field_styles{
+                        &::before{
+                            content: '';
+                            top: -10px !important;
+                        }
+                        &::after{
+                            content: '';
+                            bottom: -10px !important;
+                        }
+                    }
+                    div.haruki_input_fields{
+                        margin-right: 75px;
+
+                        &:nth-child(3){
+                            margin-right: 0px;
+                        }
+                        &::before{
+                            background-color: #6a7989;
+                            content: '';
+                            position: absolute;
+                            height: 4px;
+                            left: 0px;
+                            transition: all .2s;
+                            top: 0px;
+                            width: 350px;
+                        }
+                        &::after{
+                            background-color: #6a7989;
+                            bottom: 0px;
+                            content: '';
+                            height: 4px;
+                            left: 0px;
+                            position: absolute;
+                            transition: all .2s;
+                            width: 350px;
+                        }
+                        input.haruki_inputs{
+                            background-color: transparent;
+                            border: none;
+                            color: #b6b6b6;
+                            font-size: 35px;
+                            font-weight: bold;
+                            height: 75px;
+                            outline: none;
+                            padding: 5px 15px 5px 15px;
+                            transition: all .3s;
+                            width: 350px;
+                        }
+                        .addlabel_style{
+                            color: #6a7989 !important;
+                            font-weight: bold !important;
+                            top: -50px !important;
+                        }
+                        label.haruki_labels{
+                            color: #6a7989; 
+                            font-size: 20px;
+                            font-weight: normal;
+                            left: 15px;
+                            position: absolute;
+                            transition: all .4s;
+                            top: 25px;
+                        }
+                    }
+                }
+            }
+
+            div#kohana{
+                background-color: #e8e8e8;
+                padding: 50px 10px 80px 10px;
+                h2{
+                    font-weight: bold;
+                    color: #cfcfcf;
+                    margin: 0px 0 50px 0;
+                }
+                div#kohana_input_container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                    .kohana_input_fields_styles{
+                        &::before{
+                            left: 20px !important;
+                            opacity: 1 !important;
+                        }
+                    }
+                    div#kohana_time_container{
+                        &::before{
+                            content: "\f017";
+                            color: #cbcbcb;
+                            font-family: 'Font Awesome\ 5 Free';
+                            font-size: 35px;
+                            height: 50px;
+                            left: -50px;
+                            opacity: 0;
+                            position: relative;
+                            transition: all .3s;
+                            top: 5px;
+                        }
+                    }
+                    div#kohana_line_container{
+                        &::before{
+                            content: "\f207";
+                            color: #cbcbcb;
+                            font-family: 'Font Awesome\ 5 Free';
+                            font-weight: 900;
+                            font-size: 35px;
+                            height: 50px;
+                            left: -50px;
+                            opacity: 0;
+                            position: relative;
+                            transition: all .3s;
+                            top: 5px;
+                        }
+                    }
+                    div#kohana_phone_container{
+                        &::before{
+                            content: "\f095";
+                            color: #cbcbcb;
+                            font-family: 'Font Awesome\ 5 Free';
+                            font-weight: 900;
+                            font-size: 35px;
+                            height: 50px;
+                            left: -50px;
+                            opacity: 0;
+                            position: relative;
+                            transition: all .3s;
+                            top: 5px;
+                        }
+                    }
+                    div.kohana_input_fields{
+                        background-color: #fff;
+                        margin-right: 75px;
+                        overflow: hidden;
+                        width: 350px;
+                        &:nth-child(3){
+                            margin-right: 0px;
+                        }
+                        input.kohana_inputs{
+                            border: none;
+                            background-color: transparent;
+                            font-size: 25px;
+                            height: 70px;
+                            outline: none;
+                            overflow: hidden;
+                            padding: 10px 10px 10px 40px;
+                            position: relative;
+                            width: 350px;
+                            z-index: 3;
+                        }
+                        .label_styles{
+                            opacity: 0;
+                            left: 80px !important;
+                        }
+                        label.kohana_labels{
+                            color: #cbcbcb;
+                            font-size: 20px;
+                            font-weight: bold;
+                            left: 20px;
+                            position: absolute;
+                            transition: all .3s;
+                            top: 22px;
+                            z-index: 2;
+                        }
+                    }
+                }
+            }
+
+            div#manami{
+                background-color: #e8e8e8;
+                padding: 50px 10px 80px 10px;
+                h2{
+                    font-weight: bold;
+                    color: #cfcfcf;
+                    margin: 0px 0 50px 0;
+                }
+                div#manami_input_container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    .manami_input_fields_styles{
+                        &::before{
+                            top: 60px !important;
+                        }
+                    }
+                    div.manami_input_fields{
+                        background-color: #a8a8a8;
+                        margin-right: 75px;
+                        &:nth-child(3){
+                            margin-right: 0px;
+                        }
+
+                        &::before{
+                            background-color: #e8e8e8;
+                            content: '';
+                            height: 60px;
+                            left: 0px;
+                            position: absolute;
+                            transition: all .2s;
+                            top: 0px;
+                            width: 350px;
+                            z-index: 1;
+                        }
+                        .manami_input_styles{
+                            border-bottom: 2px solid #e8e8e8 !important;
+                        }
+                        input.manami_inputs{
+                            background-color: transparent;
+                            border: none;
+                            border-bottom: 2px solid #a8a8a8;
+                            color: #fff;
+                            font-size: 25px;
+                            height: 60px;
+                            outline: none;
+                            padding: 10px;
+                            position: relative;
+                            transition: all .2s;
+                            width: 350px;
+                            z-index: 3;
+                        }
+                        .manami_labels_styles{
+                            color: #cbcbcb !important;
+                            font-size: 17px !important;
+                            top: 65px !important;
+                        }
+                        label.manami_labels{
+                            background-color: transparent;
+                            color: #696969;
+                            font-size: 25px;
+                            font-weight: bold;
+                            left: 0px;
+                            position: absolute;
+                            text-align: left;
+                            transition: all .2s;
+                            top: 14px;
+                            z-index: 2;
+                        }
+                    }
+                }
+            }
+
+            div#fumi{
+                background-color: #e8e8e8;
+                padding: 50px 10px 80px 10px;
+                h2{
+                    font-weight: bold;
+                    color: #cfcfcf;
+                    margin: 0px 0 50px 0;
+                }
+                div#fumi_input_container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    
+                    div#fumi_course_container::before{
+                        content: 'Course Name';
+                        color: #b8b8b8;
+                        font-weight: bold;
+                        left: 75px;
+                        opacity: 0;
+                        position: absolute;
+                        transition: all .2s;
+                        top: -20px;
+                    }
+                    div#fumi_degree_container::before{
+                        content: 'Deegree';
+                        color: #b8b8b8;
+                        font-weight: bold;
+                        left: 75px;
+                        opacity: 0;
+                        position: absolute;
+                        transition: all .2s;
+                        top: -20px;
+                    }
+                    div#fumi_work_container::before{
+                        content: 'Work Place';
+                        color: #b8b8b8;
+                        font-weight: bold;
+                        left: 75px;
+                        opacity: 0;
+                        position: absolute;
+                        transition: all .2s;
+                        top: -20px;
+                    }
+                    .fumi_input_fields_styles{
+                        &::before{
+                            opacity: 1 !important;
+                            top: 7px !important;
+                        }
+                    }
+                    div.fumi_input_fields{
+                        background-color: #fff;
+                        margin-right: 75px;
+                        overflow: hidden;
+                        &:nth-child(3){
+                            margin-right: 0px;
+                        }
+                        &::after{
+                            content: '';
+                            width: 1px;
+                            position: absolute;
+                            top: 12px;
+                            bottom: 12px;
+                            left: 60px;
+                            background: #f0f0f0;
+                            z-index: 100;
+                        }
+                        .fumi_top_styles{
+                            opacity: 1 !important;
+                            top: 15px !important;
+                        }
+                        input.fumi_inputs{
+                            background-color: transparent;
+                            border: none;
+                            color: #00AEF0;
+                            font-size: 20px;
+                            height: 80px;
+                            outline: none;
+                            padding: 17px 5px 5px 75px;
+                            position: relative;
+                            width: 350px;
+                            z-index: 3;
+                        }
+                        label.fumi_labels{
+                            left: 10px;
+                            position: absolute;
+                            top: 20px;
+                            z-index: 2;
+                            .fumi_icon_course{
+                                 &::before{
+                                    color: #00AEF0;
+                                    content: '\f19c';
+                                    font-family: 'Font Awesome\ 5 Free';
+                                    font-weight: 900;
+                                    font-size: 30px;
+                                    left: 0px;
+                                    position: absolute;
+                                    top: 56px;
+                                }
+                            }
+                            .fumi_degree_course{
+                                 &::before{
+                                    color: #00AEF0;
+                                    content: '\f19d';
+                                    font-family: 'Font Awesome\ 5 Free';
+                                    font-weight: 900;
+                                    font-size: 30px;
+                                    left: 0px;
+                                    position: absolute;
+                                    top: 56px;
+                                }
+                            }
+                            .fumi_work_course{
+                                 &::before{
+                                    color: #00AEF0;
+                                    content: '\f0f2';
+                                    font-family: 'Font Awesome\ 5 Free';
+                                    font-weight: 900;
+                                    font-size: 30px;
+                                    left: 0px;
+                                    position: absolute;
+                                    top: 56px;
+                                }
+                            }
+                            .fumi_icon_styles{
+                                top: -50px !important;
+                            }
+                            i.fas{
+                                color: #ddd;
+                                font-size: 30px;
+                                left: 5px;
+                                padding-right: 10px;
+                                position: absolute;
+                                transition: all .2s;
+                                top: 6px;
+                            }
+                            .fumi_text_styles{
+                                opacity: 0;
+                                top: 55px !important;
+                            }
+                            span.fumi_text_labels{
+                                color: #696969;
+                                font-size: 19px;
+                                left: 65px;
+                                position: absolute;
+                                text-align: left;
+                                transition: all .2s;
+                                top: 7px;
+                                width: 123px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
